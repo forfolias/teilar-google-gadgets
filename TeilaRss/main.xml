@@ -1,0 +1,208 @@
+﻿<view height="405" resizable="false" width="274" onopen="onOpen()"
+  onsize="onSize()">
+  <script src="editme/config_constants.js" />
+  <script src="utils_js/utils.js" />
+  <script src="utils_js/parsers.js" />
+  <script src="utils_js/entry_list.js" />
+  <script src="main.js" />
+  <script src="editme/entry_item_impl.js" />
+
+  <img name="interface" x="0" y="0" src="interface.png"/>
+  <button name="visit_page" y="4" x="3" width="220" height="43" onrclick="visit_site()" tooltip="Κάντε click για προβολή πληροφοριών ή δεξί click για να επισκεφθείτε την ιστοσελίδα." onclick="show_info()" cursor="hand"/>
+  <button name="tips"  y="7" x="228" width="29" height="37" onclick="tip()" tooltip="Κάντε click εδώ για βοήθεια." cursor="hand" onrdblclick="easter_egg()" />
+
+<label name="choose" color="black" x="9" y="58">&CHOICE;</label>
+
+  <combobox height="100" name="combobox1" width="242" x="9" y="79" background="#FFFFFF"
+    itemWidth="100%" itemHeight="18" itemOverColor="#CCFFCC" type="droplist" onchange="whatSelected()">
+    <item>
+      <label>Ανακοινώσεις Γραμματείας</label>
+    </item>
+    <item>
+      <label>Ανακοινώσεις Εκπαιδευτικών</label>
+    </item>
+    <item>
+      <label>Ανακοινώσεις Linux Team</label>
+    </item>
+  </combobox>
+
+  <combobox height="300" name="combobox2" width="242" x="9" y="108" background="#FFFFFF"
+    itemWidth="100%" itemHeight="18" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="ekpaideut()">
+    <item>
+      <label underline="true" bold="true" align="center">Μόνιμοι εκπαιδευτικοί</label>
+    </item>
+    <item tooltip="gadam@teilar.gr">
+      <label tooltip="gadam@teilar.gr">Δρ. Αδάμ Γεώργιος</label>
+    </item>
+    <item tooltip="ventzas@teilar.gr">
+      <label tooltip="ventzas@teilar.gr">Δρ. Βέντζας Δημήτριος</label>
+    </item>
+    <item tooltip="garani@teilar.gr">
+      <label tooltip="garani@teilar.gr">Δρ. Γκαράνη Γεωργία</label>
+    </item>
+    <item tooltip="iatrellis@teilar.gr">
+      <label tooltip="iatrellis@teilar.gr">Ιατρέλλης Όμηρος</label>
+    </item>
+    <item tooltip="gkakaron@teilar.gr">
+      <label tooltip="gkakaron@teilar.gr">Κακαρόντζας Γιώργος</label>
+    </item>
+    <item tooltip="karapoulios@teilar.gr">
+      <label tooltip="karapoulios@teilar.gr">Δρ. Καραπούλιος Κωνσταντίνος</label>
+    </item>
+    <item tooltip="karetsos@teilar.gr">
+      <label tooltip="karetsos@teilar.gr">Δρ. Καρέτσος Γεώργιος</label>
+    </item>
+    <item tooltip="nliolios@teilar.gr">
+      <label tooltip="nliolios@teilar.gr">Δρ. Λιόλιος Νικόλαoς</label>
+    </item>
+    <item tooltip="batis@teilar.gr">
+      <label tooltip="batis@teilar.gr">Δρ. Μπάτης Νικόλαος</label>
+    </item>
+    <item tooltip="savvas@teilar.gr">
+      <label tooltip="savvas@teilar.gr">Δρ. Σάββας Ηλίας</label>
+    </item>
+    <item tooltip="nsamaras@teilar.gr">
+      <label tooltip="nsamaras@teilar.gr">Δρ. Σαμαράς Νικόλαος</label>
+    </item>
+    <item tooltip="ktsouk@teilar.gr">
+      <label tooltip="ktsouk@teilar.gr">Δρ. Τσουκάτος Κωνσταντίνος</label>
+    </item>
+    <item tooltip="hartonas@teilar.gr">
+      <label tooltip="hartonas@teilar.gr">Δρ. Χαρτώνας Χρυσάφης</label>
+    </item>
+    <item>
+      <label> </label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">Συνεργάτες εκπαιδευτικοί</label>
+    </item>
+    <item tooltip="dimitrisadamos@teilar.gr">
+      <label tooltip="dimitrisadamos@teilar.gr">Αδάμος Δημήτρης</label>
+    </item>
+    <item tooltip="velonis@teilar.gr">
+      <label tooltip="velonis@teilar.gr">Βελώνης Πέτρος</label>
+    </item>
+    <item tooltip="ganas@teilar.gr">
+      <label tooltip="ganas@teilar.gr">Γκανάς Λάμπρος</label>
+    </item>
+    <item tooltip="gde@teilar.gr">
+      <label tooltip="gde@teilar.gr">Ευαγγελίδης Γεώργιος</label>
+    </item>
+    <item tooltip="ioannidis@teilar.gr">
+      <label tooltip="ioannidis@teilar.gr">Ιωαννίδης Δημήτριος</label>
+    </item>
+    <item tooltip="karaisko@teilar.gr">
+      <label tooltip="karaisko@teilar.gr">Καραΐσκος Ζαφείριος</label>
+    </item>
+    <item tooltip="katisof@teilar.gr">
+      <label tooltip="katisof@teilar.gr">Κατή Σοφία</label>
+    </item>
+    <item tooltip="katsibas@teilar.gr">
+      <label tooltip="katsibas@teilar.gr">Κατσίμπας Θεόδωρος</label>
+    </item>
+    <item tooltip="k_kokkinos@teilar.gr">
+      <label tooltip="k_kokkinos@teilar.gr">Κόκκινος Κωνσταντίνος</label>
+    </item>
+    <item tooltip="kondilopoulou@teilar.gr">
+      <label tooltip="kondilopoulou@teilar.gr">Κονδυλοπούλου Ελένη</label>
+    </item>
+    <item tooltip="konstantinos@teilar.gr">
+      <label tooltip="konstantinos@teilar.gr">Κοσμάς Κωνσταντίνος</label>
+    </item>
+    <item tooltip="koumpoyia@teilar.gr">
+      <label tooltip="koumpoyia@teilar.gr">Κουμπογιάννης Στυλιανός</label>
+    </item>
+    <item tooltip="kyriatzis@teilar.gr">
+      <label tooltip="kyriatzis@teilar.gr">Κυριατζής Βασίλειος</label>
+    </item>
+    <item tooltip="lepeniotou@teilar.gr">
+      <label tooltip="lepeniotou@teilar.gr">Λεπενιώτου Αλεξάνδρα</label>
+    </item>
+    <item tooltip="cliolios@teilar.gr">
+      <label tooltip="cliolios@teilar.gr">Λιόλιος Χαράλαμπος</label>
+    </item>
+    <item tooltip="eliasbrg@teilar.gr">
+      <label tooltip="eliasbrg@teilar.gr">Μπουργάνης Ηλίας</label>
+    </item>
+    <item tooltip="cnakos@teilar.gr">
+      <label tooltip="cnakos@teilar.gr">Νάκος Χρήστος</label>
+    </item>
+    <item tooltip="germanos@teilar.gr">
+      <label tooltip="germanos@teilar.gr">Νεβράντζας Βάιος-Γερμανός</label>
+    </item>
+    <item tooltip="ntontas@teilar.gr">
+      <label tooltip="ntontas@teilar.gr">Ντόντας Απόστολος</label>
+    </item>
+    <item tooltip="stelorf@teilar.gr">
+      <label tooltip="stelorf@teilar.gr">Ορφανάκης Στυλιανός</label>
+    </item>
+    <item tooltip="ap@teilar.gr">
+      <label tooltip="ap@teilar.gr">Παπακώστας Άρης</label>
+    </item>
+    <item tooltip="fsof@teilar.gr">
+      <label tooltip="fsof@teilar.gr">Σοφός Φίλιππος</label>
+    </item>
+    <item tooltip="stathis@teilar.gr">
+      <label tooltip="stathis@teilar.gr">Στάθης Λάμπρος</label>
+    </item>
+    <item tooltip="tilemaxos@teilar.gr">
+      <label tooltip="tilemaxos@teilar.gr">Στυλιανός Τηλέμαχος</label>
+    </item>
+    <item tooltip="swmaras@teilar.gr">
+      <label tooltip="swmaras@teilar.gr">Σωμαράς Χρήστος</label>
+    </item>
+    <item tooltip="fuji@teilar.gr">
+      <label tooltip="fuji@teilar.gr">Τζιγκούρας Ιωάννης</label>
+    </item>
+    <item tooltip="tsiakmaki@teilar.gr">
+      <label tooltip="tsiakmaki@teilar.gr">Τσιακμάκη Μαρία</label>
+    </item>
+    <item tooltip="foukalas@teilar.gr">
+      <label tooltip="foukalas@teilar.gr">Φουκαλάς Φώτιος</label>
+    </item>
+    <item tooltip="kchaikalis@teilar.gr">
+      <label tooltip="kchaikalis@teilar.gr">Χαϊκάλης Κωνσταντίνος</label>
+    </item>
+    <item tooltip="rizos@teilar.gr">
+      <label tooltip="rizos@teilar.gr">Χαλιαμπάλιας Ρίζος</label>
+    </item>
+  </combobox>
+
+  <div name="container" y="133" x="1">
+    <div name="content" background="#FFFFFF">
+      <div name="entriesViewPort">
+        <div name="entries" width="100%"/>
+      </div>
+      <label name="statusLabel" size="8"/>
+    </div>
+    <div name="scrollbar">
+      <progressbar cursor="hand" enabled="true" hitTest="htclient" name="bar" max="90"
+        orientation="vertical" value="90"/>
+    </div>
+    <div name="header">
+      <img name="left"/>
+      <div height="100%" name="middle">
+        <img name="stretchImage" width="70%"/>
+      </div>
+      <img name="right" src="default\rightRSS.png"/>
+    </div>
+    <div name="logo">
+      <img name="image"/>
+    </div>
+    <div name="borderLeft">
+      <img height="100%" name="stretchImage"/>
+    </div>
+    <div name="borderRight">
+      <img height="100%" name="stretchImage"/>
+    </div>
+    <div name="footer">
+      <img name="left"/>
+      <div height="100%" name="middle">
+        <img name="stretchImage" width="70%"/>
+      </div>
+      <img name="right"/>
+    </div>
+    <div name="title" width="100%"/>
+  </div>
+  <img cursor="hand" height="0" name="imgSizer" width="0"/>
+</view>

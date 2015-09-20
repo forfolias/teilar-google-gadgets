@@ -1,0 +1,40 @@
+﻿<!-- 
+Copyright (C) 2009 Vasilakos Georgios.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<strings>
+
+  <GADGET_NAME>Copyka?</GADGET_NAME>
+  <GADGET_DESCRIPTION>Εμφάνιση των αποτελεσμάτων της εξεταστικής για τα μαθήματα του τμήματος Τεχνολογίας Πληροφορικής και Τηλεπικοινωνιών του ΤΕΙ Λάρισας</GADGET_DESCRIPTION>
+  <GADGET_ABOUT_TEXT>Copyka?
+  Copyright © 2009 Βασιλάκος Γεώργιος
+    Εμφάνιση των αποτελεσμάτων της εξεταστικής για τα μαθήματα του τμήματος Τεχνολογίας Πληροφορικής και Τηλεπικοινωνιών του ΤΕΙ Λάρισας, βάσει της ηλεκτρονικής γραμματείας του τμήματος.
+
+
+  • Επικοινωνία : forfolias@linuxteam.cs.teilar.gr
+  </GADGET_ABOUT_TEXT>
+
+  <CHOOSE>Επιλέξτε εξάμηνο και μάθημα :</CHOOSE>
+  <VIEW_RESULTS>Κάντε click εδώ για να δείτε τα αποτελέσματα.</VIEW_RESULTS>
+  <SELECT_LESSON>Επιλογή μαθήματος</SELECT_LESSON>
+  <CS_COURSE>Κατεύθυνση Πληροφορικής</CS_COURSE>
+  <TEL_COURSE>Κατεύθυνση Τηλεπικοινωνιών και Δικτύων</TEL_COURSE>
+  <DISPLAY>Εμφάνιση</DISPLAY>
+  <RESULTS>αποτελεσμάτων</RESULTS>
+  <WAIT>Παρακαλώ περιμένετε...</WAIT>
+  <ERROR>Σφάλμα κατά την επικοινωνία...</ERROR>
+  <BANNER_TOOLTIP>Κάντε διπλό click για να επισκεφθείτε την ιστοσελίδα του τμήματος ή δεξί click για να επισκεφθείτε την ιστοσελίδα της e-γραμματείας.</BANNER_TOOLTIP>
+
+</strings>

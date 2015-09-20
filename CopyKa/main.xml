@@ -1,0 +1,429 @@
+﻿<!-- 
+Copyright (C) 2009 Vasilakos Georgios.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<view width="270" height="210" onopen="onOpen()" resizable="false">
+  <script src="main.js" />
+
+  <img name="interface" x="0" y="0" src="interface.png" />
+
+  <label x="15" y="13" size="8">&CHOOSE;</label>
+
+  <combobox height="150" name="eksamino" width="35" x="17" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" onchange="eksamino_changed()">
+    <item>
+      <label>1o</label>
+    </item>
+    <item>
+      <label>2o</label>
+    </item>
+    <item>
+      <label>3o</label>
+    </item>
+    <item>
+      <label>4o</label>
+    </item>
+    <item>
+      <label>5o</label>
+    </item>
+    <item>
+      <label>6o</label>
+    </item>
+    <item>
+      <label>7o</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks1" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="true" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΜΑΘΗΜΑΤΙΚΗ ΑΝΑΛΥΣΗ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΦΥΣΙΚΗ</label>
+    </item>
+    <item>
+      <label>(Ε) ΦΥΣΙΚΗ</label>
+    </item>
+    <item>
+      <label>(Θ) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Ι</label>
+    </item>
+    <item>
+      <label>(Ε) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΡΧΕΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΩΝ</label>
+    </item>
+    <item>
+      <label>(Θ) ΗΛΕΚΤΡΟΝΙΚΑ</label>
+    </item>
+    <item>
+      <label>(Ε) ΗΛΕΚΤΡΟΝΙΚΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΙΑΚΡΙΤΑ ΣΥΣΤΗΜΑΤΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΝΤΑΤΙΚΟ ΦΡΟΝΤΙΣΤ. ΜΑΘΗΜΑΤΙΚΩΝ</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks2" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΜΑΘΗΜΑΤΙΚΗ ΑΝΑΛΥΣΗ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΦΥΣΙΚΕΣ ΑΡΧΕΣ ΤΕΧΝΟΛΟΓΙΑΣ ΕΠΙΚΟΙΝΩΝΙΩΝ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΡΧΙΤΕΚΤΟΝΙΚΗ Η/Υ Ι</label>
+    </item>
+    <item>
+      <label>(Ε) ΑΡΧΙΤΕΚΤΟΝΙΚΗ Η/Υ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΗΛΕΚΤΡΟΝΙΚΕΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΗΛΕΚΤΡΟΝΙΚΕΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΡΙΘΜΗΤΙΚΗ ΑΝΑΛΥΣΗ</label>
+    </item>
+    <item>
+      <label>(Θ) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΞΕΝΗ ΓΛΩΣΣΑ Ι</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks3" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΒΑΣΕΙΣ ΔΕΔΟΜΕΝΩΝ Ι</label>
+    </item>
+    <item>
+      <label>(Ε) ΒΑΣΕΙΣ ΔΕΔΟΜΕΝΩΝ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ ΚΑΙ ΑΛΓΟΡΙΘΜΟΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ ΚΑΙ ΑΛΓΟΡΙΘΜΟΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΘΕΩΡΙΑ ΠΙΘΑΝΟΤΗΤΩΝ ΚΑΙ ΣΤΑΤΙΣΤΙΚΗ</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΙΚΤΥΑ Ι</label>
+    </item>
+    <item>
+      <label>(Ε) ΔΙΚΤΥΑ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΛΕΙΤΟΥΡΓΙΚΑ ΣΥΣΤΗΜΑΤΑ Ι</label>
+    </item>
+    <item>
+      <label>(Ε) ΛΕΙΤΟΥΡΓΙΚΑ ΣΥΣΤΗΜΑΤΑ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΦΑΡΜΟΓΕΣ ΓΡΑΜΜΙΚΗΣ ΑΛΓΕΒΡΑΣ ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗΣ ΚΑΙ ΤΙΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΞΕΝΗ ΓΛΩΣΣΑ ΙΙ</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks4" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΛΓΟΡΙΘΜΟΙ ΚΑΙ ΠΟΛΥΠΛΟΚΟΤΗΤΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΡΧΙΤΕΚΤΟΝΙΚΗ Η/Υ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΑΡΧΙΤΕΚΤΟΝΙΚΗ Η/Υ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΝΑΛΥΣΗ ΚΑΙ ΣΧΕΔΙΑΣΜΟΣ ΠΛΗΡΟΦΟΡΙΑΚΩΝ ΣΥΣΤΗΜΑΤΩΝ</label>
+    </item>
+    <item>
+      <label>(Ε) ΑΝΑΛΥΣΗ ΚΑΙ ΣΧΕΔΙΑΣΜΟΣ ΠΛΗΡΟΦΟΡΙΑΚΩΝ ΣΥΣΤΗΜΑΤΩΝ</label>
+    </item>
+    <item>
+      <label>(Θ) ΘΕΩΡΙΑ ΣΥΣΤΗΜΑΤΩΝ-ΣΑΕ</label>
+    </item>
+    <item>
+      <label>(Ε) ΘΕΩΡΙΑ ΣΥΣΤΗΜΑΤΩΝ-ΣΑΕ</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΙΚΤΥΑ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΔΙΚΤΥΑ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΡΧΕΣ ΓΛΩΣΣΩΝ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ</label>
+    </item>
+    <item>
+      <label>(Θ) ΥΠΟΛΟΓΙΣΙΜΟΤΗΤΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΞΕΝΗ ΓΛΩΣΣΑ ΙΙΙ</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks5" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΟΙΚΟΝΟΜΙΚΑ ΤΩΝ ΕΠΙΧΕΙΡΗΣΕΩΝ</label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">Κατεύθυνση Πληροφορικής&CS_COURSE;</label>
+    </item>
+    <item>
+      <label>(Θ) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΤΕΧΝΟΛΟΓΙΑ ΛΟΓΙΣΜΙΚΟΥ</label>
+    </item>
+    <item>
+      <label>(Ε) ΤΕΧΝΟΛΟΓΙΑ ΛΟΓΙΣΜΙΚΟΥ</label>
+    </item>
+    <item>
+      <label>(Θ) ΒΑΣΕΙΣ ΔΕΔΟΜΕΝΩΝ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΒΑΣΕΙΣ ΔΕΔΟΜΕΝΩΝ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΛΟΓΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΛΟΓΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΟΡΓΑΝΩΣΗ ΚΑΙ ΔΙΑΧΕΙΡΙΣΗ ΑΡΧΕΙΩΝ</label>
+    </item>
+    <item>
+      <label>(Ε) ΟΡΓΑΝΩΣΗ ΚΑΙ ΔΙΑΧΕΙΡΙΣΗ ΑΡΧΕΙΩΝ</label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">&TEL_COURSE;</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΠΕΞΕΡΓΑΣΙΑ ΣΗΜΑΤΟΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΕΠΕΞΕΡΓΑΣΙΑ ΣΗΜΑΤΟΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΤΗΛΕΠΙΚΟΙΝΩΝΙΑΚΑ ΣΥΣΤΗΜΑΤΑ Ι</label>
+    </item>
+    <item>
+      <label>(Ε) ΤΗΛΕΠΙΚΟΙΝΩΝΙΑΚΑ ΣΥΣΤΗΜΑΤΑ Ι</label>
+    </item>
+    <item>
+      <label>(Θ) ΟΠΤΙΚΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΟΠΤΙΚΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΚΙΝΗΤΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΚΙΝΗΤΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks6" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΤΕΧΝΙΚΗ ΝΟΜΟΘΕΣΙΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΠΙΧΕΙΡΗΣΙΑΚΗ ΕΡΕΥΝΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΙΑΧΕΙΡΙΣΗ ΕΡΓΩΝ ΠΛΗΡΟΦΟΡΙΚΗΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΣΦΑΛΕΙΑ ΠΛΗΡΟΦΟΡΙΑΚΩΝ ΣΥΣΤΗΜΑΤΩΝ</label>
+    </item>
+    <item>
+      <label>(Ε) ΑΣΦΑΛΕΙΑ ΠΛΗΡΟΦΟΡΙΑΚΩΝ ΣΥΣΤΗΜΑΤΩΝ</label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">Κατεύθυνση Πληροφορικής&CS_COURSE;</label>
+    </item>
+    <item>
+      <label>(Θ) ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ</label>
+    </item>
+    <item>
+      <label>(Ε) ΤΕΧΝΗΤΗ ΝΟΗΜΟΣΥΝΗ</label>
+    </item>
+    <item>
+      <label>(Θ) ΠΡΟΧΩΡΗΜΕΝΕΣ ΕΦΑΡΜΟΓΕΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ</label>
+    </item>
+    <item>
+      <label>(Ε) ΠΡΟΧΩΡΗΜΕΝΕΣ ΕΦΑΡΜΟΓΕΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ</label>
+    </item>
+    <item>
+      <label>(Θ) ΠΟΛΥΜΕΣΑ</label>
+    </item>
+    <item>
+      <label>(Ε) ΠΟΛΥΜΕΣΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΛΕΙΤΟΥΡΓΙΚΑ ΣΥΣΤΗΜΑΤΑ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΛΕΙΤΟΥΡΓΙΚΑ ΣΥΣΤΗΜΑΤΑ ΙΙ</label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">&TEL_COURSE;</label>
+    </item>
+    <item>
+      <label>(Θ) ΤΗΛΕΠΙΚΟΙΝΩΝΙΑΚΑ ΣΥΣΤΗΜΑΤΑ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Ε) ΤΗΛΕΠΙΚΟΙΝΩΝΙΑΚΑ ΣΥΣΤΗΜΑΤΑ ΙΙ</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΙΔΙΚΑ ΘΕΜΑΤΑ ΟΠΤΙΚΩΝ ΕΠΙΚΟΙΝΩΝΙΩΝ</label>
+    </item>
+    <item>
+      <label>(Ε) ΕΙΔΙΚΑ ΘΕΜΑΤΑ ΟΠΤΙΚΩΝ ΕΠΙΚΟΙΝΩΝΙΩΝ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΣΥΡΜΑΤΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΑΣΥΡΜΑΤΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+  </combobox>
+  <combobox height="213" name="eks7" width="188" x="57" y="39" background="#FFFFFF"
+    itemWidth="100%" itemHeight="15" itemOverColor="#CCFFCC" type="droplist" visible="false" onchange="mathima_changed()">
+    <item>
+      <label underline="true" bold="true" align="center">&SELECT_LESSON;</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΙΔΑΚΤΙΚΗ ΤΗΣ ΠΛΗΡΟΦΟΡΙΚΗΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΔΙΔΑΚΤΙΚΗ ΤΗΣ ΠΛΗΡΟΦΟΡΙΚΗΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΚΑΤΑΝΕΜΗΜΕΝΑ ΣΥΣΤΗΜΑΤΑ</label>
+    </item>
+    <item>
+      <label>(Ε) ΚΑΤΑΝΕΜΗΜΕΝΑ ΣΥΣΤΗΜΑΤΑ</label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">&CS_COURSE;</label>
+    </item>
+    <item>
+      <label>(Θ) ΣΕΜΙΝΑΡΙΟ ΘΕΜΑΤΩΝ ΤΕΧΝΟΛΟΓΙΚΗΣ ΑΙΧΜΗΣ ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΙΔΙΚΑ ΘΕΜΑΤΑ ΒΑΣΕΩΝ ΔΕΔΟΜΕΝΩΝ</label>
+    </item>
+    <item>
+      <label>(Ε) ΕΙΔΙΚΑ ΘΕΜΑΤΑ ΒΑΣΕΩΝ ΔΕΔΟΜΕΝΩΝ</label>
+    </item>
+    <item>
+      <label>(Θ) ΗΛΕΚΤΡΟΝΙΚΟ ΕΜΠΟΡΙΟ</label>
+    </item>
+    <item>
+      <label>(Ε) ΗΛΕΚΤΡΟΝΙΚΟ ΕΜΠΟΡΙΟ</label>
+    </item>
+    <item>
+      <label>(Θ) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΝΤΕΡΝΕΤ</label>
+    </item>
+    <item>
+      <label>(Ε) ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΙΝΤΕΡΝΕΤ</label>
+    </item>
+    <item>
+      <label>(Θ) ΥΠΟΛΟΓΙΣΤΙΚΟ ΠΛΕΓΜΑ</label>
+    </item>
+    <item>
+      <label>(Ε) ΥΠΟΛΟΓΙΣΤΙΚΟ ΠΛΕΓΜΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΜΕΤΑΓΛΩΤΤΙΣΤΕΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΜΕΤΑΓΛΩΤΤΙΣΤΕΣ</label>
+    </item>
+    <item>
+      <label underline="true" bold="true" align="center">&TEL_COURSE;</label>
+    </item>
+    <item>
+      <label>(Θ) ΣΕΜΙΝΑΡΙΟ ΘΕΜΑΤΩΝ ΤΕΧΝΟΛΟΓΙΚΗΣ ΑΙΧΜΗΣ ΣΤΙΣ ΤΗΛΕΠΙΚΟΙΝΩΝΙΕΣ ΚΑΙ ΔΙΚΤΥΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΟΡΥΦΟΡΙΚΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Ε) ΔΟΡΥΦΟΡΙΚΕΣ ΕΠΙΚΟΙΝΩΝΙΕΣ</label>
+    </item>
+    <item>
+      <label>(Θ) ΔΙΚΤΥΩΣΗ ΚΑΙ ΑΥΤΟΜΑΤΟΠΟΙΗΣΗ</label>
+    </item>
+    <item>
+      <label>(Ε) ΔΙΚΤΥΩΣΗ ΚΑΙ ΑΥΤΟΜΑΤΟΠΟΙΗΣΗ</label>
+    </item>
+    <item>
+      <label>(Θ) ΕΥΡΥΖΩΝΙΚΑ ΔΙΚΤΥΑ</label>
+    </item>
+    <item>
+      <label>(Ε) ΕΥΡΥΖΩΝΙΚΑ ΔΙΚΤΥΑ</label>
+    </item>
+    <item>
+      <label>(Θ) ΑΠΟΔΟΣΗ ΔΙΚΤΥΩΝ</label>
+    </item>
+    <item>
+      <label>(E) ΑΠΟΔΟΣΗ ΔΙΚΤΥΩΝ</label>
+    </item>
+  </combobox>
+  <button name="results" align="center" image="button.png" y="77" x="55" width="152" height="42" onclick="retrieveFeed()" tooltip="&VIEW_RESULTS;" cursor="hand" onrdblclick="easter_egg()"/>
+  <label x="97" y="81" size="11" enabled="true" onclick="retrieveFeed();" tooltip="&VIEW_RESULTS;" cursor="hand" onrdblclick="easter_egg()">&DISPLAY;</label>
+  <label x="71" y="98" size="11" enabled="true" onclick="retrieveFeed();" tooltip="&VIEW_RESULTS;" cursor="hand" onrdblclick="easter_egg()">&RESULTS;</label>
+  <label x="74" y="122" name="wait" size="7" visible="false">&WAIT;</label>
+  <label x="59" y="122" name="error" size="7" visible="false">&ERROR;</label>
+  <button y="143" x="1" width="262" height="55" ondblclick="var aa = new ActiveXObject('WScript.Shell'); aa.run('http://www.cs.teilar.gr/');" tooltip="&BANNER_TOOLTIP;" cursor="hand" onrclick="var aa = new ActiveXObject('WScript.Shell'); aa.run('http://dionysos.teilar.gr/unistudent/');"/>
+</view>

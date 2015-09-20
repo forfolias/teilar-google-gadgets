@@ -1,0 +1,16 @@
+﻿<gadget minimumGoogleDesktopVersion="5.1.0.0">
+  <about>
+    <id>21c35350-29d7-11de-8c30-0800200c9a66</id>
+    <name>&GADGET_NAME;</name>
+    <description>&GADGET_DESCRIPTION;</description>
+    <version>1.0</version>
+    <author>Vasilakos Georgios</author>
+    <authorEmail>forfolias@linuxteam.cs.teilar.gr</authorEmail>
+    <category>news</category>
+    <authorWebsite>http://linuxteam.cs.teilar.gr/~forfolias/</authorWebsite>
+    <copyright>2009</copyright>
+    <aboutText>&GADGET_ABOUT_TEXT;</aboutText>
+    <smallIcon>icon_small.png</smallIcon>
+    <icon>icon_large.png</icon>
+  </about>
+</gadget>

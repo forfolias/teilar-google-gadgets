@@ -1,0 +1,48 @@
+﻿<!-- 
+Copyright (C) 2009 Vasilakos Georgios.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<view width="270" height="150" onopen="eksamino.selectedIndex = 0;" resizable="false">
+  <script src="main.js" />
+  <img name="interface" x="0" y="0" src="interface.png" />
+  <label x="15" y="13" size="8">Επιλέξτε εξάμηνο :</label>
+  <combobox height="150" name="eksamino" width="35" x="17" y="42" background="#FFFFFF"
+    itemWidth="100%" itemHeight="13" itemOverColor="#CCFFCC" type="droplist" onchange="eksamino_changed()">
+    <item>
+      <label>1o</label>
+    </item>
+    <item>
+      <label>2o</label>
+    </item>
+    <item>
+      <label>3o</label>
+    </item>
+    <item>
+      <label>4o</label>
+    </item>
+    <item>
+      <label>5o</label>
+    </item>
+    <item>
+      <label>6o</label>
+    </item>
+    <item>
+      <label>7o</label>
+    </item>
+  </combobox>
+  <button x="70" y="35" image="button.png" onclick="viewResults()" tooltip="Κάντε click εδώ για να δείτε το πρόγραμμα του εξαμήνου." cursor="hand"/>
+  <label x="85" y="38" size="10" tooltip="Κάντε click εδώ για να δείτε το πρόγραμμα του εξαμήνου." cursor="hand">&VIEW;</label>
+  <button y="86" x="1" width="262" height="55" ondblclick="var aa = new ActiveXObject('WScript.Shell'); aa.run('http://www.cs.teilar.gr/');" tooltip="Κάντε διπλό click για να επισκεφθείτε την ιστοσελίδα του τμήματος." cursor="hand" onrdblclick="easter_egg()"/>
+</view>
