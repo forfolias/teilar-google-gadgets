@@ -10,4 +10,4 @@ Display the weekly course schedule per semester.
 Display information and announcements of the Computer Science Department, teachers or LinuxTeam.
 
 ## Screenshots
-[![screenshots](http://george.vasilakos.info/portfolio/images/tools/google-gadgets.png)](http://george.vasilakos.info/portfolio/tools/#google-gadgets)
+![screenshots](google-gadgets.png)
